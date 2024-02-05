@@ -2,19 +2,22 @@
 	"name": "olog",
 	"displayName": "OneLogin OTP Generator",
 	"description": "Generate OTP from Airbus account",
-	"version": "0.0.1",
-	"publisher": "yne",
-    "engines": {
+	"version": "1.0.1",
+	"publisher": "134744072",
+	"license": "MIT",
+	"main": "main.js",
+	"engines": {
 		"vscode": "^1.73.0"
 	},
-	"main": "./main.js",
+	"dependencies": {},
+	"devDependencies": {},
 	"extensionKind": [
 		"workspace"
 	],
 	"activationEvents": [
 		"onStartupFinished"
 	],
-    "contributes": {
+	"contributes": {
 		"commands": [
 			{
 				"command": "olog.login",
@@ -28,5 +31,6 @@
 				"command": "olog.generate",
 				"title": "Generate OTP"
 			}
-        ]}
+		]
+	}
 }

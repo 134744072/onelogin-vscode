@@ -1,8 +1,9 @@
+// save https://raw.githubusercontent.com/microsoft/vscode/main/src/vscode-dts/vscode.d.ts in /modules/ folder to get type hint
 const vscode = require("vscode");
 const crypto = require('crypto');
 const http = require('http');
 const https = require('https');
-let status,context; // ugly global var
+let status,context;
 exports.activate = async function (ctx) {
     context = ctx;
     status = vscode.window.createStatusBarItem('onelogin');
